@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>pagina_detalhe</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <script async src="js/utils.js"></script>
+    <script async src="js/detalhe_noticia.js"></script>
+    <script async src="assets/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <span>Tech News</span>
+        </a>
+        <button
+          data-bs-toggle="collapse"
+          class="navbar-toggler"
+          data-bs-target="#navcol-5"
+        >
+          <span class="visually-hidden">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-5">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="criar_noticia.html"
+                >Adicionar Noticia</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="mb-5">
+      <header>
+        <div class="p-5 text-center bg-light border-bottom">
+          <h1 class="mb-1 fw-bold squeleton" id="id-titulo">
+            titulo da noticia
+          </h1>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-md-8 d-flex justify-content-center flex-wrap">
+            <div class="card mt-2">
+              <img
+                class="card-img-top w-100 d-block"
+                loading="lazy"
+                src="assets/image/img-default.jpg"
+                id="id-img"
+              />
+              <div class="card-body">
+                <span class="text-secondary squeleton" id="id-data"
+                  >11/06/2022 02:21:15</span
+                >
+                <h4 class="card-title squeleton" id="id-titulo-card">Title</h4>
+                <p class="card-text squeleton" id="id-descricao">
+                  Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
+                  justo odio, dapibus ac facilisis in, egestas eget quam. Donec
+                  id elit non mi porta gravida at eget metus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="margin: 8px">
+              <div class="card-header">
+                <h5 class="mb-0">Pesquisar</h5>
+              </div>
+              <div class="card-body">
+                <div class="card-body">
+                  <div class="input-group mb-3">
+                    <input
+                      id="id-pesquisa"
+                      type="text"
+                      class="form-control"
+                      placeholder="Digite um nome"
+                    />
+                    <button
+                      class="btn btn-primary"
+                      type="button"
+                      id="button-addon2"
+                      onclick="fnPesquisaHome()"
+                    >
+                      Button
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              style="margin: 8px; margin-top: 16px; margin-bottom: 32px"
+            >
+              <div class="card-header">
+                <h5 class="mb-0">Categorias</h5>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled" id="id-tags"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <footer class="text-center bg-dark position-fixed bottom-0 w-100 mt-5">
+      <div class="container text-white py-4">
+        <p class="text-muted mb-0">Copyright © Portal -2022</p>
+      </div>
+    </footer>
+  </body>
+</html>

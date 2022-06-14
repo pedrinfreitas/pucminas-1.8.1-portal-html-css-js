@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Tech News - home</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <script async src="js/utils.js"></script>
+    <script async src="js/categoria.js"></script>
+    <script async src="assets/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <span>Tech News</span>
+        </a>
+        <button
+          data-bs-toggle="collapse"
+          class="navbar-toggler"
+          data-bs-target="#navcol-5"
+        >
+          <span class="visually-hidden">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-5">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="criar_noticia.html"
+                >Adicionar Noticia</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <header>
+        <div class="p-5 text-center bg-light border-bottom">
+          <h1 class="mb-1 fw-bold squeleton" id="id-titulo">
+            nome da categoria
+          </h1>
+          <p class="mb-0 text-secondary">Categorias</p>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div
+            class="row d-flex flex-shrink-0 justify-content-center flex-wrap"
+          >
+            <div class="row row-cols-1 row-cols-md-3 my-2" id="id-cards">
+              <div class="col mb-2">
+                <div class="card h-100 w-100">
+                  <img
+                    src="assets/image/img-default.jpg"
+                    class="card-img-top"
+                    class="inner-card animate-pulse"
+                  />
+                  <div class="card-body">
+                    <p class="inner-card animate-pulse"></p>
+                    <h5 class="card-title inner-card animate-pulse"></h5>
+                    <p class="card-text inner-card animate-pulse"></p>
+                    <div class="card-text inner-card animate-pulse"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-2">
+                <div class="card h-100 w-100">
+                  <img
+                    src="assets/image/img-default.jpg"
+                    class="card-img-top"
+                    class="inner-card animate-pulse"
+                  />
+                  <div class="card-body">
+                    <p class="inner-card animate-pulse"></p>
+                    <h5 class="card-title inner-card animate-pulse"></h5>
+                    <p class="card-text inner-card animate-pulse"></p>
+                    <div class="card-text inner-card animate-pulse"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-2">
+                <div class="card h-100 w-100">
+                  <img
+                    src="assets/image/img-default.jpg"
+                    class="card-img-top"
+                    class="inner-card animate-pulse"
+                  />
+                  <div class="card-body">
+                    <p class="inner-card animate-pulse"></p>
+                    <h5 class="card-title inner-card animate-pulse"></h5>
+                    <p class="card-text inner-card animate-pulse"></p>
+                    <p class="card-text inner-card animate-pulse"></p>
+                    <p class="card-text inner-card animate-pulse"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-2">
+                <div class="card h-100 w-100">
+                  <img
+                    src="assets/image/img-default.jpg"
+                    class="card-img-top"
+                    class="inner-card animate-pulse"
+                  />
+                  <div class="card-body">
+                    <p class="inner-card animate-pulse"></p>
+                    <h5 class="card-title inner-card animate-pulse"></h5>
+                    <p class="card-text inner-card animate-pulse"></p>
+                    <div class="card-text inner-card animate-pulse"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <nav class="d-flex align-items-center mb-5 pb-5">
+              <p class="me-2" id="id-pag-titulo"></p>
+              <ul class="pagination">
+                <div class="d-flex" id="id-paginacao">
+                  <li class="page-item">
+                    <!-- <button class="page-link" onclick="fnSetPagina(1)">
+                      1
+                    </button> -->
+                  </li>
+                </div>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- <div class="col-md-4">
+             <div class="card" style="margin: 8px">
+              <div class="card-header">
+                <h5 class="mb-0">Pesquisar</h5>
+              </div>
+              <div class="card-body">
+                <div class="card-body">
+                  <div class="input-group mb-3">
+                    <input
+                      id="id-pesquisa"
+                      type="text"
+                      class="form-control"
+                      placeholder="Digite um nome"
+                      onkeyup="fnPesquisaNoticia()"
+                    />
+                    <button
+                      class="btn btn-primary"
+                      type="button"
+                      id="button-addon2"
+                    >
+                      Button
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div
+              class="card"
+              style="margin: 8px; margin-top: 16px; margin-bottom: 32px"
+            >
+              <div class="card-header">
+                <h5 class="mb-0">Categorias</h5>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled" id="id-tags"></ul>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </main>
+    </section>
+    <footer class="text-center bg-dark position-fixed bottom-0 w-100 mt-5">
+      <div class="container text-white py-4">
+        <p class="text-muted mb-0">Copyright © Portal -2022</p>
+      </div>
+    </footer>
+  </body>
+</html>

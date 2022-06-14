@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Tech News - Criar Noticia</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <script async src="js/criar_noticia.js"></script>
+    <script async src="assets/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <span>Tech News</span>
+        </a>
+        <button
+          data-bs-toggle="collapse"
+          class="navbar-toggler"
+          data-bs-target="#navcol-5"
+        >
+          <span class="visually-hidden">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-5">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="criar_noticia.html"
+                >Adicionar Noticia</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <header>
+        <div class="p-5 text-center bg-light border-bottom">
+          <h1 class="mb-1 fw-bold">Adicionar Noticia</h1>
+        </div>
+      </header>
+      <main class="container mt-4">
+        <div class="mb-3">
+          <label for="txt_titulo" class="form-label">Titulo</label>
+          <input type="text" class="form-control" id="txt_titulo" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="txt_descricao" class="form-label">Descrição</label>
+          <textarea class="form-control" id="txt_descricao" required></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="txt_tag" class="form-label">Tags</label>
+          <input type="text" class="form-control" id="txt_tag" />
+          <small
+            >Digite as tags separadas por virgula por exemplo: esporte,
+            eventos</small
+          >
+        </div>
+
+        <div class="mb-3">
+          <button
+            onclick="fnCriarNoticia()"
+            name="btn_salvar"
+            id="btn_salvar"
+            class="btn btn-primary"
+          >
+            Salvar
+          </button>
+
+          <button
+            onclick="fnLimparNoticia()"
+            name="btn_salvar"
+            id="btn_salvar"
+            class="btn btn-primary"
+          >
+            Limpar
+          </button>
+        </div>
+      </main>
+    </section>
+    <footer class="text-center bg-dark position-fixed bottom-0 w-100 mt-5">
+      <div class="container text-white py-4 py-lg-5">
+        <p class="text-muted mb-0">Copyright © Portal -2022</p>
+      </div>
+    </footer>
+  </body>
+</html>
